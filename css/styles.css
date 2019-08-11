@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #fff;
+}
+.container {
+	max-width: 900px;
+}
+.accordion {
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	text-align: left;
+	cursor: pointer;
+	font-size: 16px;
+	transition: .4s;
+	color: #444;
+}
+.accordion:after {
+	content: '+';
+	float: right;
+	color: #777;
+}
+.accordion:hover {
+	background-color: #ccc;
+}
+.accordion.active {
+	background-color: #bbb;
+}
+.panel {
+	padding: 18px;
+}
+.test1 {
+	width: 300px;
+	height: 200px;
+	clip-path: polygon(195px 147px,295px 297px,395px 147px,295px -3px);
+}
+.test {
+	width: 350px;
+	/*127 90*/
+	height: 95px;
+	/*width: 100px;*/
+	/*height: 100px;*/
+	/*background-image: url('../../../random/recursos/img/bg3.jpg');*/
+	/*background-position: center;*/
+	/*background-size: cover;*/
+	/*-webkit-mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg);*/
+	-webkit-mask-image: url(../categoriaBox.svg);
+}
+img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	object-fit: cover;
+}
+.test-color {
+	/*fill: url('../../../random/recursos/img/bg3.jpg');*/
+	fill: red;
+}
